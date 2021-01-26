@@ -7,6 +7,6 @@ export default class IndexPage extends React.Component {
     super(props);
   }
   render() {
-    return <MyTabBar />;
+    return <MyTabBar navigation={this.props.navigation} />;
   }
 }

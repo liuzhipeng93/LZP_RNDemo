@@ -25,7 +25,7 @@ export default class MyTabBar extends React.Component {
           renderSelectedIcon={() => <Image source={homeIcon} />}
           badgeText="1"
           onPress={() => this.setState({selectedTab: 'home'})}>
-          {<HomePage />}
+          {<HomePage navigation={this.props.navigation} />}
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'mine'}
@@ -33,7 +33,7 @@ export default class MyTabBar extends React.Component {
           renderIcon={() => <Image source={mineIcon} />}
           renderSelectedIcon={() => <Image source={mineIcon} />}
           onPress={() => this.setState({selectedTab: 'mine'})}>
-          {<MinePage />}
+          {<MinePage navigation={this.props.navigation} />}
         </TabNavigator.Item>
       </TabNavigator>
     );
