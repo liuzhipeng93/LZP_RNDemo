@@ -21,22 +21,12 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="Index"
             component={IndexPage}
-            options={{
-              title: '',
-              headerStyle: {
-                height: 0, //隐藏导航栏
-              },
-            }}
+            options={{headerShown: false}}
           />
           <Stack.Screen
             name="Collapsible"
             component={CollapsiblePage}
-            options={{
-              title: '',
-              headerStyle: {
-                height: 0, //隐藏导航栏
-              },
-            }}
+            options={{headerShown: false}}
           />
         </Stack.Navigator>
       </NavigationContainer>

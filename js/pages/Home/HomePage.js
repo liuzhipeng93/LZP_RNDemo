@@ -8,6 +8,8 @@ import {
   Text,
 } from 'react-native';
 
+import NavigationUtil from '../../navigation/NavigationUtil';
+
 const FUNCTION_LIST = [
   {
     id: 0,
@@ -26,7 +28,7 @@ export default class HomePage extends React.Component {
     switch (index) {
       case 0:
         {
-          this.props.navigation.navigate('Collapsible');
+          NavigationUtil.goPage(null,'Collapsible');
         }
         break;
     }
