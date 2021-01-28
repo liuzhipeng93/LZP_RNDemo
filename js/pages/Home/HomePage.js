@@ -15,6 +15,14 @@ const FUNCTION_LIST = [
     id: 0,
     title: 'Collapsible(手风琴、折叠抽屉)',
   },
+  {
+    id: 1,
+    title: '未完待续',
+  },
+  {
+    id: 2,
+    title: '未完待续',
+  },
 ];
 
 export default class HomePage extends React.Component {
