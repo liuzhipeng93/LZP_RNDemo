@@ -13,15 +13,15 @@ import NavigationUtil from '../../navigation/NavigationUtil';
 const FUNCTION_LIST = [
   {
     id: 0,
-    title: 'collapsible(手风琴、折叠抽屉)',
+    title: 'Collapsible(手风琴、折叠抽屉)',
   },
   {
     id: 1,
-    title: 'icon(各种图标)',
+    title: 'Icons(各种图标)',
   },
   {
     id: 2,
-    title: '未完待续',
+    title: 'AsyncStorage(本地存储)',
   },
 ];
 
@@ -42,6 +42,11 @@ export default class HomePage extends React.Component {
       case 1:
         {
           NavigationUtil.goPage(null, 'Icons');
+        }
+        break;
+      case 2:
+        {
+          NavigationUtil.goPage(null, 'AsyncStorage');
         }
         break;
     }

@@ -5,6 +5,7 @@ export default class MinePage extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <SafeAreaView>

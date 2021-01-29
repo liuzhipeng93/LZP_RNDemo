@@ -7,6 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import IndexPage from '../pages/Index/IndexPage';
 import CollapsiblePage from '../pages/Collapsible/CollapsiblePage';
 import IconsPage from '../pages/Icons/IconsPage';
+import AsyncStoragePage from '../pages/AsyncStorage/AsyncStoragePage';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,11 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="Icons"
             component={IconsPage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="AsyncStorage"
+            component={AsyncStoragePage}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
