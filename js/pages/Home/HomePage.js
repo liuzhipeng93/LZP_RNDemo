@@ -13,11 +13,11 @@ import NavigationUtil from '../../navigation/NavigationUtil';
 const FUNCTION_LIST = [
   {
     id: 0,
-    title: 'Collapsible(手风琴、折叠抽屉)',
+    title: 'collapsible(手风琴、折叠抽屉)',
   },
   {
     id: 1,
-    title: '未完待续',
+    title: 'icon(各种图标)',
   },
   {
     id: 2,
@@ -36,7 +36,12 @@ export default class HomePage extends React.Component {
     switch (index) {
       case 0:
         {
-          NavigationUtil.goPage(null,'Collapsible');
+          NavigationUtil.goPage(null, 'Collapsible');
+        }
+        break;
+      case 1:
+        {
+          NavigationUtil.goPage(null, 'Icons');
         }
         break;
     }

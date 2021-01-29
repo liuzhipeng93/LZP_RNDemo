@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import IndexPage from '../pages/Index/IndexPage';
 import CollapsiblePage from '../pages/Collapsible/CollapsiblePage';
+import IconsPage from '../pages/Icons/IconsPage';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,11 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="Collapsible"
             component={CollapsiblePage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Icons"
+            component={IconsPage}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
