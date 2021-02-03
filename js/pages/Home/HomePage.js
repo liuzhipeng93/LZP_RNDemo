@@ -23,6 +23,10 @@ const FUNCTION_LIST = [
     id: 2,
     title: 'AsyncStorage(本地存储)',
   },
+  {
+    id: 3,
+    title: 'Unfold(展开收起功能)',
+  },
 ];
 
 export default class HomePage extends React.Component {
@@ -47,6 +51,11 @@ export default class HomePage extends React.Component {
       case 2:
         {
           NavigationUtil.goPage(null, 'AsyncStorage');
+        }
+        break;
+      case 3:
+        {
+          NavigationUtil.goPage(null, 'Unfold');
         }
         break;
     }

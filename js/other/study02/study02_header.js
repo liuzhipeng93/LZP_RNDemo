@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Dimensions,
-} from 'react-native';
+import {StyleSheet, View, Text, Dimensions} from 'react-native';
 
 const {deviceWidth} = Dimensions.get('window');
 
@@ -13,8 +8,8 @@ class Header extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={[styles.text,styles.textLeft]}>网易</Text>
-        <Text style={[styles.text,styles.textMid]}>新闻</Text>
+        <Text style={[styles.text, styles.textLeft]}>网易</Text>
+        <Text style={[styles.text, styles.textMid]}>新闻</Text>
         <Text style={[styles.text]}>有态度</Text>
       </View>
     );
@@ -22,27 +17,27 @@ class Header extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        width: deviceWidth,
-        height: 40,
-        backgroundColor: 'lightgray',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems:'center',
-        borderBottomWidth: .5,
-        borderBottomColor: 'red',
-    },
-    text: {
-        fontSize: 20,
-        fontWeight: 'bold',
-    },
-    textLeft: {
-        color: 'red',
-    },
-    textMid: {
-        color: 'white',
-        backgroundColor: 'red',
-    },
+  container: {
+    width: deviceWidth,
+    height: 40,
+    backgroundColor: 'lightgray',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderBottomWidth: 0.5,
+    borderBottomColor: 'red',
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  textLeft: {
+    color: 'red',
+  },
+  textMid: {
+    color: 'white',
+    backgroundColor: 'red',
+  },
 });
 
 //导入模块

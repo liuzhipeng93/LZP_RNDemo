@@ -8,9 +8,14 @@
 
 import React from 'react';
 import MyNavigation from './navigation/MyNavigation';
+// import {Provider} from '@ant-design/react-native';
 
 const App: () => React$Node = () => {
-  return <MyNavigation />;
+  return (
+    // <Provider>
+      <MyNavigation />
+    // </Provider>
+  );
 };
 
 export default App;

@@ -8,6 +8,7 @@ import IndexPage from '../pages/Index/IndexPage';
 import CollapsiblePage from '../pages/Collapsible/CollapsiblePage';
 import IconsPage from '../pages/Icons/IconsPage';
 import AsyncStoragePage from '../pages/AsyncStorage/AsyncStoragePage';
+import UnfoldPage from '../pages/Unfold/UnfoldPage';
 
 const Stack = createStackNavigator();
 
@@ -38,6 +39,11 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="AsyncStorage"
             component={AsyncStoragePage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Unfold"
+            component={UnfoldPage}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
