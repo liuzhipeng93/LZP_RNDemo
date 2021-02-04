@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 
 import NavigationUtil from '../../navigation/NavigationUtil';
+import EventBus from 'react-native-event-bus';
 
 const FUNCTION_LIST = [
   {
@@ -26,6 +27,10 @@ const FUNCTION_LIST = [
   {
     id: 3,
     title: 'Unfold(展开收起功能)',
+  },
+  {
+    id: 4,
+    title: 'event-bus(通知)',
   },
 ];
 
@@ -56,6 +61,13 @@ export default class HomePage extends React.Component {
       case 3:
         {
           NavigationUtil.goPage(null, 'Unfold');
+        }
+        break;
+      case 4:
+        {
+          EventBus.getInstance().fireEvent('EventBusTest', {
+            content: 'EventBusTestContent',
+          });
         }
         break;
     }
