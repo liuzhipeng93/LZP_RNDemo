@@ -6,6 +6,7 @@ import {
   StyleSheet,
   TouchableWithoutFeedback,
   Text,
+  AppState,
 } from 'react-native';
 
 import NavigationUtil from '../../navigation/NavigationUtil';
@@ -35,6 +36,8 @@ const FUNCTION_LIST = [
 ];
 
 export default class HomePage extends React.Component {
+  state = {appState: AppState.currentState};
+
   constructor(props) {
     super(props);
 
