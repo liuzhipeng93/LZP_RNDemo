@@ -33,6 +33,10 @@ const FUNCTION_LIST = [
     id: 4,
     title: 'event-bus(通知)',
   },
+  {
+    id: 5,
+    title: 'Toast(轻提示)',
+  },
 ];
 
 export default class HomePage extends React.Component {
@@ -71,6 +75,11 @@ export default class HomePage extends React.Component {
           EventBus.getInstance().fireEvent('EventBusTest', {
             content: 'EventBusTestContent',
           });
+        }
+        break;
+      case 5:
+        {
+          NavigationUtil.goPage(null, 'Toast');
         }
         break;
     }
