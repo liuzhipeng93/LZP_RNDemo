@@ -37,6 +37,10 @@ const FUNCTION_LIST = [
     id: 5,
     title: 'Toast(轻提示)',
   },
+  {
+    id: 6,
+    title: 'Button(按钮)',
+  },
 ];
 
 export default class HomePage extends React.Component {
@@ -80,6 +84,11 @@ export default class HomePage extends React.Component {
       case 5:
         {
           NavigationUtil.goPage(null, 'Toast');
+        }
+        break;
+      case 6:
+        {
+          NavigationUtil.goPage(null, 'Button');
         }
         break;
     }

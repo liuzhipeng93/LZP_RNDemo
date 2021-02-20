@@ -10,6 +10,7 @@ import IconsPage from '../pages/Icons/IconsPage';
 import AsyncStoragePage from '../pages/AsyncStorage/AsyncStoragePage';
 import UnfoldPage from '../pages/Unfold/UnfoldPage';
 import ToastPage from '../pages/Toast/ToastPage';
+import ButtonPage from '../pages/Button/ButtonPage';
 
 const Stack = createStackNavigator();
 
@@ -50,6 +51,11 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="Toast"
             component={ToastPage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Button"
+            component={ButtonPage}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
