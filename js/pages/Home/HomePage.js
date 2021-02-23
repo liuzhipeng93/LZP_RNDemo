@@ -45,6 +45,10 @@ const FUNCTION_LIST = [
     id: 7,
     title: 'DatePicker(日期选择)',
   },
+  {
+    id: 8,
+    title: 'Picker(选择器:地址)',
+  },
 ];
 
 export default class HomePage extends React.Component {
@@ -98,6 +102,11 @@ export default class HomePage extends React.Component {
       case 7:
         {
           NavigationUtil.goPage(null, 'DatePicker');
+        }
+        break;
+      case 8:
+        {
+          NavigationUtil.goPage(null, 'Picker');
         }
         break;
     }

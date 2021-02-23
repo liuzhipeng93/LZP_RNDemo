@@ -12,6 +12,7 @@ import UnfoldPage from '../pages/Unfold/UnfoldPage';
 import ToastPage from '../pages/Toast/ToastPage';
 import ButtonPage from '../pages/Button/ButtonPage';
 import DatePickerPage from '../pages/DatePicker/DatePickerPage';
+import PickerPage from '../pages/Picker/PickerPage';
 
 const Stack = createStackNavigator();
 
@@ -62,6 +63,11 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="DatePicker"
             component={DatePickerPage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Picker"
+            component={PickerPage}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
