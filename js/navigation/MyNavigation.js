@@ -13,6 +13,7 @@ import ToastPage from '../pages/Toast/ToastPage';
 import ButtonPage from '../pages/Button/ButtonPage';
 import DatePickerPage from '../pages/DatePicker/DatePickerPage';
 import PickerPage from '../pages/Picker/PickerPage';
+import RadioPage from '../pages/Radio/RadioPage';
 
 const Stack = createStackNavigator();
 
@@ -68,6 +69,11 @@ export default class MyNavigation extends React.Component {
           <Stack.Screen
             name="Picker"
             component={PickerPage}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Radio"
+            component={RadioPage}
             options={{headerShown: false}}
           />
         </Stack.Navigator>

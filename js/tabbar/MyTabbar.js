@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, View, Text} from 'react-native';
+import {Image} from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
 
 import HomePage from '../pages/Home/HomePage';
