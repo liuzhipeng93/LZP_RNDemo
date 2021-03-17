@@ -53,6 +53,10 @@ const FUNCTION_LIST = [
     id: 9,
     title: 'Radio(单选框)',
   },
+  {
+    id: 10,
+    title: 'Switch(滑动开关)',
+  },
 ];
 
 export default class HomePage extends React.Component {
@@ -116,6 +120,11 @@ export default class HomePage extends React.Component {
       case 9:
         {
           NavigationUtil.goPage(null, 'Radio');
+        }
+        break;
+      case 10:
+        {
+          NavigationUtil.goPage(null, 'Switch');
         }
         break;
     }
