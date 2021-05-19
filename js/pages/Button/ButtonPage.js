@@ -1,14 +1,17 @@
 import React from 'react';
 import {Button, WhiteSpace, WingBlank} from '@ant-design/react-native';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
 
 export default class ButtonPage extends React.Component {
+  clickEvent() {
+    console.log('clickEvent');
+  }
   render() {
     return (
       <SafeAreaView>
         <WingBlank>
           <WhiteSpace />
-          <Button>default</Button>
+          <Button onPress={this.clickEvent}>default</Button>
           <WhiteSpace />
           <Button disabled>default disabled</Button>
           <WhiteSpace />

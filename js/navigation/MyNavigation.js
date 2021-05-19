@@ -15,6 +15,7 @@ import DatePickerPage from '../pages/DatePicker/DatePickerPage';
 import PickerPage from '../pages/Picker/PickerPage';
 import RadioPage from '../pages/Radio/RadioPage';
 import SwitchPage from '../pages/Switch/SwitchPage';
+import TreePage from '../pages/Tree/TreePage';
 
 const Stack = createStackNavigator();
 
@@ -81,6 +82,11 @@ export default class MyNavigation extends React.Component {
             name="Switch"
             component={SwitchPage}
             options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Tree"
+            component={TreePage}
+            options={{ headerShown: false }}
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -57,6 +57,10 @@ const FUNCTION_LIST = [
     id: 10,
     title: 'Switch(滑动开关)',
   },
+  {
+    id: 11,
+    title: 'Tree(树状列表)',
+  },
 ];
 
 export default class HomePage extends React.Component {
@@ -125,6 +129,11 @@ export default class HomePage extends React.Component {
       case 10:
         {
           NavigationUtil.goPage(null, 'Switch');
+        }
+        break;
+      case 11:
+        {
+          NavigationUtil.goPage(null, 'Tree');
         }
         break;
     }
